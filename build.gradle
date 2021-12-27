@@ -50,12 +50,15 @@ repositories {
 dependencies {
     implementation 'com.qmetry:qaf:2.1.10'
     implementation 'com.qmetry:qaf-support:2.1.10'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
+
     implementation 'io.rest-assured:rest-assured:3.1.1'
     testImplementation 'io.rest-assured:rest-assured:3.1.1'
     testImplementation 'io.rest-assured:json-path:3.1.1'
     testImplementation 'io.rest-assured:json-schema-validator:3.1.1'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.5'
     testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+
     // https://mvnrepository.com/artifact/com.qmetry/qaf-reportportal-integration
 
 
