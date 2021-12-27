@@ -1,0 +1,20 @@
+
+SCENARIO: Get User Details
+META-DATA: {"description": "Get the User Detail  webservice","groups": ["WS"]}
+
+     Given User sets the base URL for Get request
+     And   User perform GET reguest for the user '{$username}'
+     Then  User validates the valid response payload of the user and status code is 200
+
+END
+
+
+
+
+SCENARIO: Verify invalid user by performing GET API Request
+META-DATA: {"description": "Invalid user details webservice","groups": ["WS"]}
+
+    Given User sets the base URL for Get request with invalid user Nagalakshmi122
+    Then  User not found user details and staus code is 404
+
+

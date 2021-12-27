@@ -1,0 +1,35 @@
+{
+  "total": 6,
+  "pass": 6,
+  "fail": 0,
+  "skip": 0,
+  "classes": [
+    "com.qmetry.qaf.automation.step.client.DataDrivenScenario",
+    "com.qmetry.qaf.automation.step.client.Scenario"
+  ],
+  "envInfo": {
+    "browser-actual-capabilities": {},
+    "isfw-build-info": {
+      "qaf-Type": "core",
+      "qaf-Revision": "14",
+      "qaf-Version": "2.1",
+      "qaf-Build-Time": "01-Jan-2019 19:18:14"
+    },
+    "run-parameters": {
+      "scenario.file.loc": "scenarios/",
+      "step.provider.pkg": "com.qmetry.qaf.example.automation"
+    },
+    "execution-env-info": {
+      "java.arch": "64",
+      "java.vendor": "Oracle Corporation",
+      "java.version": "1.8.0_171",
+      "os.arch": "x86_64",
+      "host": "Nishits-MacBook-Pro.local",
+      "os.name": "Mac OS X",
+      "user.name": "nishit",
+      "os.version": "10.16"
+    }
+  },
+  "startTime": 1640288770490,
+  "endTime": 1640288772677
+}

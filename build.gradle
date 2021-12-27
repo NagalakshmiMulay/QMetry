@@ -1,0 +1,118 @@
+//plugins {
+//    id 'java'
+//}
+//
+//group 'QMetry'
+//version '1.0-SNAPSHOT'
+//
+//sourceCompatibility = 1.8
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+//}
+
+import java.text.SimpleDateFormat
+
+apply plugin: 'java'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def getCurrentTimestamp() {
+    Date today = new Date()
+    SimpleDateFormat df = new SimpleDateFormat("dd_MMM_yyyy_hh_mm_aa")
+    return df.format(today)
+}
+
+ext {
+    //set true to enable to compile using aspectj
+    compileUsingAspect = false
+    testResultsDir = 'test-results'
+    runTime = getCurrentTimestamp()
+    resultOutputDir = String.valueOf(testResultsDir) + '/' + runTime
+
+    // set suiteFile, default is 'config/testrun_config.xml'
+    if (!project.hasProperty('suiteFile')) {
+        suiteFile = 'config/testrun_config.xml'
+    }
+}
+//Add repository here
+repositories {
+    jcenter()
+    maven {
+        url "https://qmetry.github.io/qaf/dist/"
+    }
+}
+//Add dependencies here
+dependencies {
+    implementation 'com.qmetry:qaf:2.1.10'
+    implementation 'com.qmetry:qaf-support:2.1.10'
+    implementation 'io.rest-assured:rest-assured:3.1.1'
+    testImplementation 'io.rest-assured:rest-assured:3.1.1'
+    testImplementation 'io.rest-assured:json-path:3.1.1'
+    testImplementation 'io.rest-assured:json-schema-validator:3.1.1'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.5'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+    // https://mvnrepository.com/artifact/com.qmetry/qaf-reportportal-integration
+
+
+}
+//for compilation using aspectj
+if (compileUsingAspect) {
+    compileTestJava.deleteAllActions()
+    compileTestJava << {
+        ant.taskdef(
+                resource: 'org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties',
+                classpath: configurations.testCompile.asPath)
+
+        ant.iajc(
+                source: sourceCompatibility,
+                target: targetCompatibility,
+                destDir: sourceSets.test.output.classesDir.absolutePath,
+                fork: 'true',
+                sourceRootCopyFilter: '**/*.java,**/*.aj',
+                aspectpath: configurations.testCompile.asPath)
+
+                {
+                    sourceroots {
+                        sourceSets.test.java.srcDirs.each {
+                            dir -> pathelement(location: dir.absolutePath)
+                        }
+                    }
+                }
+    }
+}
+
+//run test
+test {
+    useTestNG() {
+        useDefaultListeners = true
+        outputDirectory file(resultOutputDir)
+//        suites '/Users/nishit/Documents/QMetry/config/testrun_config.xml'
+        suites suiteFile
+
+        //System properties for report
+        systemProperty 'org.uncommons.reportng.xml-dialect', 'testng'
+        systemProperty 'org.uncommons.reportng.escape-output', false
+        systemProperty 'log4j.configuration', 'file:///' + projectDir + '/resources/log4j.properties'
+        systemProperty 'json.report.root.dir', testResultsDir
+        systemProperty 'outputDir', resultOutputDir
+        systemProperty 'test.results.dir', testResultsDir + '/html'
+        systemProperty 'json.report.dir', resultOutputDir + '/json'
+        systemProperties System.properties
+    }
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat = 'full'
+    }
+    reports {
+        html {
+            enabled false
+        }
+        xml.destination "/Users/nishit/Documents/QMetry/reports/myReport.xml"
+    }
+}
+

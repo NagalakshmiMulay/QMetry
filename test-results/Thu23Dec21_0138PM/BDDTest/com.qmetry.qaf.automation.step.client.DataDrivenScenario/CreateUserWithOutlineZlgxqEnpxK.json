@@ -1,0 +1,54 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "userSetsTheBaseURL",
+      "args": [
+        "[]"
+      ],
+      "result": "success",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "userSetsTheRequestPayload",
+      "args": [
+        "[${id}, ${username}, ${firstName}, ${lastName}, ${password}, ${email}, ${phone}, ${userStatus}]"
+      ],
+      "result": "success",
+      "subLogs": [],
+      "duration": -1
+    },
+    {
+      "commandName": "userValidatesTheValidResponsePayloadForListOfUsersAndStatusCodeIs",
+      "args": [
+        "[${id}, 200]"
+      ],
+      "result": "success",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given User sets the base URL",
+      "type": "TestStepPass",
+      "duration": 1,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "And   User sets the Request Payload '120','nagalakshmi20','nagalakshmi','mulay','nagalakshmi20','nagalakshmi15@gmail.com','8888888720','0'",
+      "type": "TestStepPass",
+      "duration": 327,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then  User validates the valid response payload for list of users '120' and status code is 200",
+      "type": "TestStepPass",
+      "duration": 9,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ]
+}

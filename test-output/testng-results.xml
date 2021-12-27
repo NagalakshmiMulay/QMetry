@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="12" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '121','nagalakshmi121','nagalakshmi121','nagalakshmi121','string@123','dsa@gmail.com','8878787878','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '121' and status code is 200</div></div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL for Get request</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User perform GET reguest for the user '{$username}'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload of the user and status code is 200</div></div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL for Get request with invalid user Nagalakshmi122</div></div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '114','nagalakshmi15','nagalakshmi','mulay','nagalakshmi15','nagalakshmi15@gmail.com','8888888787','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '114' and status code is 200</div></div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '119','nagalakshmi19','nagalakshmi','mulay','nagalakshmi19','nagalakshmi15@gmail.com','8888888719','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '119' and status code is 200</div></div>]]>
+    </line>
+    <line>
+      <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '120','nagalakshmi20','nagalakshmi','mulay','nagalakshmi20','nagalakshmi15@gmail.com','8888888720','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '120' and status code is 200</div></div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Demo" duration-ms="6544" started-at="2021-12-27T18:00:34Z" finished-at="2021-12-27T18:00:41Z">
+    <groups>
+      <group name="WS">
+        <method signature="scenarios.createUser.bdd.Verify post operation for list of users with valid data( java.util.Map)[pri:1000, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8]" name="Verify post operation for list of users with valid data" class="com.qmetry.qaf.automation.step.client.DataDrivenScenario"/>
+        <method signature="scenarios.getUser.bdd.Get User Details()[pri:1001, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9]" name="Get User Details" class="com.qmetry.qaf.automation.step.client.Scenario"/>
+        <method signature="scenarios.getUser.bdd.Verify invalid user by performing GET API Request()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" name="Verify invalid user by performing GET API Request" class="com.qmetry.qaf.automation.step.client.Scenario"/>
+      </group> <!-- WS -->
+    </groups>
+    <test name="BDD Test" duration-ms="6544" started-at="2021-12-27T18:00:34Z" finished-at="2021-12-27T18:00:41Z">
+      <class name="com.qmetry.qaf.automation.step.client.Scenario">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Get User Details" name="setup" is-config="true" duration-ms="2" started-at="2021-12-27T12:00:38Z" finished-at="2021-12-27T12:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Get User Details" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:38Z" finished-at="2021-12-27T12:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="Get User Details()[pri:1001, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9]" test-instance-name="Get User Details" name="Get User Details" duration-ms="659" started-at="2021-12-27T12:00:38Z" description="Get the User Detail  webservice" finished-at="2021-12-27T12:00:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL for Get request</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User perform GET reguest for the user '{$username}'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload of the user and status code is 200</div></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Get User Details -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Get User Details" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Get User Details status=SUCCESS method=scenarios.getUser.bdd.Get User Details()[pri:1001, instance:com.qmetry.qaf.automation.step.client.Scenario@3e9] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL for Get request</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User perform GET reguest for the user '{$username}'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload of the user and status code is 200</div></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Get User Details" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Verify invalid user by performing GET API Request" name="setup" is-config="true" duration-ms="2" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Verify invalid user by performing GET API Request" name="setupMethod" is-config="true" duration-ms="5" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qmetry.qaf.automation.step.client.Scenario.scenario()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="Verify invalid user by performing GET API Request()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Verify invalid user by performing GET API Request" name="Verify invalid user by performing GET API Request" duration-ms="346" started-at="2021-12-27T12:00:39Z" description="Invalid user details webservice" finished-at="2021-12-27T12:00:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL for Get request with invalid user Nagalakshmi122</div></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Verify invalid user by performing GET API Request -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Verify invalid user by performing GET API Request" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Verify invalid user by performing GET API Request status=SUCCESS method=scenarios.getUser.bdd.Verify invalid user by performing GET API Request()[pri:1002, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL for Get request with invalid user Nagalakshmi122</div></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.Scenario@3ea]" test-instance-name="Verify invalid user by performing GET API Request" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.qmetry.qaf.automation.step.client.Scenario -->
+      <class name="com.qmetry.qaf.automation.step.client.DataDrivenScenario">
+        <test-method status="PASS" signature="setupSuit(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="setupSuit" is-config="true" duration-ms="105" started-at="2021-12-27T12:00:34Z" finished-at="2021-12-27T12:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuit -->
+        <test-method status="PASS" signature="setupTest(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="setupTest" is-config="true" duration-ms="5" started-at="2021-12-27T12:00:34Z" finished-at="2021-12-27T12:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="setup" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:34Z" finished-at="2021-12-27T12:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:34Z" finished-at="2021-12-27T12:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qmetry.qaf.automation.step.client.DataDrivenScenario.scenario(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="Verify post operation for list of users with valid data( java.util.Map)[pri:1000, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8]" test-instance-name="Verify post operation for list of users with valid data" name="Verify post operation for list of users with valid data" duration-ms="3875" started-at="2021-12-27T12:00:34Z" description="Login example" finished-at="2021-12-27T12:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=121, username=nagalakshmi121, firstName=nagalakshmi121, lastName=nagalakshmi121, email=dsa@gmail.com, password=string@123, phone=8878787878, userStatus=0, __index=1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '121','nagalakshmi121','nagalakshmi121','nagalakshmi121','string@123','dsa@gmail.com','8878787878','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '121' and status code is 200</div></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Verify post operation for list of users with valid data -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:38Z" finished-at="2021-12-27T12:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Verify post operation for list of users with valid data status=SUCCESS method=scenarios.createUser.bdd.Verify post operation for list of users with valid data( java.util.Map)[pri:1000, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '121','nagalakshmi121','nagalakshmi121','nagalakshmi121','string@123','dsa@gmail.com','8878787878','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '121' and status code is 200</div></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:38Z" finished-at="2021-12-27T12:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="setup" is-config="true" duration-ms="0" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="Create user with outline" duration-ms="563" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=114, username=nagalakshmi15, firstName=nagalakshmi, lastName=mulay, password=nagalakshmi15, email=nagalakshmi15@gmail.com, phone=8888888787, userStatus=0, __index=1}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '114','nagalakshmi15','nagalakshmi','mulay','nagalakshmi15','nagalakshmi15@gmail.com','8888888787','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '114' and status code is 200</div></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Create user with outline -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-12-27T12:00:39Z" finished-at="2021-12-27T12:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qmetry.qaf.automation.step.client.DataDrivenScenario.scenario(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:40Z" finished-at="2021-12-27T12:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create user with outline status=SUCCESS method=scenarios.createUserWithSO.feature.Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '114','nagalakshmi15','nagalakshmi','mulay','nagalakshmi15','nagalakshmi15@gmail.com','8888888787','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '114' and status code is 200</div></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="setupMethod" is-config="true" duration-ms="0" started-at="2021-12-27T12:00:40Z" finished-at="2021-12-27T12:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qmetry.qaf.automation.step.client.DataDrivenScenario.scenario(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="Create user with outline" duration-ms="553" started-at="2021-12-27T12:00:40Z" finished-at="2021-12-27T12:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=119, username=nagalakshmi19, firstName=nagalakshmi, lastName=mulay, password=nagalakshmi19, email=nagalakshmi15@gmail.com, phone=8888888719, userStatus=0, __index=2}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '119','nagalakshmi19','nagalakshmi','mulay','nagalakshmi19','nagalakshmi15@gmail.com','8888888719','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '119' and status code is 200</div></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Create user with outline -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:40Z" finished-at="2021-12-27T12:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create user with outline status=SUCCESS method=scenarios.createUserWithSO.feature.Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '119','nagalakshmi19','nagalakshmi','mulay','nagalakshmi19','nagalakshmi15@gmail.com','8888888719','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '119' and status code is 200</div></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setupMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="setupMethod" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:40Z" finished-at="2021-12-27T12:00:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qmetry.qaf.automation.step.client.DataDrivenScenario.scenario(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupMethod -->
+        <test-method status="PASS" signature="Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="Create user with outline" duration-ms="353" started-at="2021-12-27T12:00:40Z" finished-at="2021-12-27T12:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{id=120, username=nagalakshmi20, firstName=nagalakshmi, lastName=mulay, password=nagalakshmi20, email=nagalakshmi15@gmail.com, phone=8888888720, userStatus=0, __index=3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '120','nagalakshmi20','nagalakshmi','mulay','nagalakshmi20','nagalakshmi15@gmail.com','8888888720','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '120' and status code is 200</div></div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Create user with outline -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-12-27T12:00:41Z" finished-at="2021-12-27T12:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Create user with outline status=SUCCESS method=scenarios.createUserWithSO.feature.Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb] output=<div style="display:block;margin-left:10px;"><div  class="teststeppass"><span class="teststeppass-label">T </span>Given User sets the base URL</div><div  class="teststeppass"><span class="teststeppass-label">T </span>And   User sets the Request Payload '120','nagalakshmi20','nagalakshmi','mulay','nagalakshmi20','nagalakshmi15@gmail.com','8888888720','0'</div><div  class="teststeppass"><span class="teststeppass-label">T </span>Then  User validates the valid response payload for list of users '120' and status code is 200</div></div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Create user with outline" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-27T12:00:41Z" finished-at="2021-12-27T12:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="afterTest" is-config="true" duration-ms="0" started-at="2021-12-27T12:00:41Z" finished-at="2021-12-27T12:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuit(org.testng.ITestContext)[pri:0, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]" test-instance-name="Verify post operation for list of users with valid data" name="afterSuit" is-config="true" duration-ms="3" started-at="2021-12-27T12:00:41Z" finished-at="2021-12-27T12:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@22635ba0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
+      </class> <!-- com.qmetry.qaf.automation.step.client.DataDrivenScenario -->
+    </test> <!-- BDD Test -->
+  </suite> <!-- Demo -->
+</testng-results>

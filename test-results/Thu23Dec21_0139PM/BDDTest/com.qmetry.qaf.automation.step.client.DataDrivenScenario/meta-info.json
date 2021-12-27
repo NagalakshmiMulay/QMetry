@@ -1,0 +1,134 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "type": "test",
+      "args": [
+        {
+          "id": "121",
+          "username": "nagalakshmi121",
+          "firstName": "nagalakshmi121",
+          "lastName": "nagalakshmi121",
+          "email": "dsa@gmail.com",
+          "password": "string@123",
+          "phone": "8878787878",
+          "userStatus": "0",
+          "__index": 1.0
+        }
+      ],
+      "metaData": {
+        "dataFile": "resources/data.json",
+        "description": "Login example",
+        "groups": [
+          "SMOKE"
+        ],
+        "lineNo": 1.0,
+        "name": "Verify post operation for list of users with valid data",
+        "referece": "scenarios/createUser.bdd",
+        "resultFileName": "VerifyPostOperationForListOfUsersWithValidData",
+        "sign": "scenarios.createUser.bdd.Verify post operation for list of users with valid data( java.util.Map)[pri:1000, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3e8]"
+      },
+      "dependsOn": [],
+      "startTime": 1640288388602,
+      "duration": 3301,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "type": "test",
+      "args": [
+        {
+          "id": "114",
+          "username": "nagalakshmi15",
+          "firstName": "nagalakshmi",
+          "lastName": "mulay",
+          "password": "nagalakshmi15",
+          "email": "nagalakshmi15@gmail.com",
+          "phone": "8888888787",
+          "userStatus": "0",
+          "__index": 1.0
+        }
+      ],
+      "metaData": {
+        "description": "",
+        "groups": [],
+        "JSON_DATA_TABLE": "[{\"id\":\"114\",\"username\":\"nagalakshmi15\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi15\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888787\",\"userStatus\":\"0\"},{\"id\":\"119\",\"username\":\"nagalakshmi19\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi19\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888719\",\"userStatus\":\"0\"},{\"id\":\"120\",\"username\":\"nagalakshmi20\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi20\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888720\",\"userStatus\":\"0\"}]",
+        "lineNo": 1.0,
+        "name": "Create user with outline",
+        "referece": "scenarios/createUserWithSO.feature",
+        "resultFileName": "CreateUserWithOutline",
+        "sign": "scenarios.createUserWithSO.feature.Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]"
+      },
+      "dependsOn": [],
+      "startTime": 1640288392639,
+      "duration": 336,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 2,
+      "type": "test",
+      "args": [
+        {
+          "id": "119",
+          "username": "nagalakshmi19",
+          "firstName": "nagalakshmi",
+          "lastName": "mulay",
+          "password": "nagalakshmi19",
+          "email": "nagalakshmi15@gmail.com",
+          "phone": "8888888719",
+          "userStatus": "0",
+          "__index": 2.0
+        }
+      ],
+      "metaData": {
+        "description": "",
+        "groups": [],
+        "JSON_DATA_TABLE": "[{\"id\":\"114\",\"username\":\"nagalakshmi15\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi15\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888787\",\"userStatus\":\"0\"},{\"id\":\"119\",\"username\":\"nagalakshmi19\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi19\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888719\",\"userStatus\":\"0\"},{\"id\":\"120\",\"username\":\"nagalakshmi20\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi20\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888720\",\"userStatus\":\"0\"}]",
+        "lineNo": 1.0,
+        "name": "Create user with outline",
+        "referece": "scenarios/createUserWithSO.feature",
+        "resultFileName": "CreateUserWithOutlineDAAZPtmjwT",
+        "sign": "scenarios.createUserWithSO.feature.Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]"
+      },
+      "dependsOn": [],
+      "startTime": 1640288392983,
+      "duration": 344,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 3,
+      "type": "test",
+      "args": [
+        {
+          "id": "120",
+          "username": "nagalakshmi20",
+          "firstName": "nagalakshmi",
+          "lastName": "mulay",
+          "password": "nagalakshmi20",
+          "email": "nagalakshmi15@gmail.com",
+          "phone": "8888888720",
+          "userStatus": "0",
+          "__index": 3
+        }
+      ],
+      "metaData": {
+        "description": "",
+        "groups": [],
+        "JSON_DATA_TABLE": "[{\"id\":\"114\",\"username\":\"nagalakshmi15\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi15\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888787\",\"userStatus\":\"0\"},{\"id\":\"119\",\"username\":\"nagalakshmi19\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi19\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888719\",\"userStatus\":\"0\"},{\"id\":\"120\",\"username\":\"nagalakshmi20\",\"firstName\":\"nagalakshmi\",\"lastName\":\"mulay\",\"password\":\"nagalakshmi20\",\"email\":\"nagalakshmi15@gmail.com\",\"phone\":\"8888888720\",\"userStatus\":\"0\"}]",
+        "lineNo": 1,
+        "name": "Create user with outline",
+        "referece": "scenarios/createUserWithSO.feature",
+        "resultFileName": "CreateUserWithOutlineNqOqwsUIZU",
+        "sign": "scenarios.createUserWithSO.feature.Create user with outline( java.util.Map)[pri:1003, instance:com.qmetry.qaf.automation.step.client.DataDrivenScenario@3eb]"
+      },
+      "dependsOn": [],
+      "startTime": 1640288393340,
+      "duration": 308,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}
