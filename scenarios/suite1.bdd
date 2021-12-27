@@ -1,0 +1,7 @@
+SCENARIO: Login Example
+META-DATA: {"description":"Login example","groups":["SMOKE"],"dataFile":"resources/data.json"}
+
+	Given get 'https://www.amazon.com'
+	When I login user with '${username}' and '${password}'
+	Then assert login '${text}'
+END

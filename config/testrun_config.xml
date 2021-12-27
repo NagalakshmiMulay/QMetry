@@ -5,7 +5,7 @@
 
  <test name="BDD Test" enabled="true">
         <parameter name="scenario.file.loc" value="scenarios/" />
-        <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.automation"/>
+        <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps"/>
 
         <classes>
             <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>

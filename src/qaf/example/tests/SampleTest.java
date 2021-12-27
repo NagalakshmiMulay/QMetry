@@ -9,5 +9,5 @@ public class SampleTest extends WebDriverTestCase {
 	@Test
 	public void testGoogleSearch() {
 	}
-	
+
 }
