@@ -1,4 +1,4 @@
-package com.qmetry.qaf.example.steps;
+package com.qmetry.qaf.example.steps.ui;
 
 import static com.qmetry.qaf.automation.step.CommonStep.click;
 import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;

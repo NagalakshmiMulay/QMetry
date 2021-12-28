@@ -1,4 +1,4 @@
-package com.qmetry.qaf.example.steps;
+package com.qmetry.qaf.example.steps.apis;
 
 import Data.imp.UserData;
 import com.qmetry.qaf.automation.step.QAFTestStep;

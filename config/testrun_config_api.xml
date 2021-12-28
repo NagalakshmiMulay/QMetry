@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo" parallel="tests" thread-count="1" verbose="1">
+
+     <test name="Behavior-Driven Development API Test" enabled="true">
+         <parameter name="scenario.file.loc" value="scenarios/APIregression/" />
+         <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps.apis"/>
+         <classes>
+                <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>
+          <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+
+         </classes>
+     </test>
+
+</suite>
+

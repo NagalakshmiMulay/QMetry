@@ -1,4 +1,4 @@
-package com.qmetry.qaf.example.automation;
+package com.qmetry.qaf.example.steps.apis;
 
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import io.restassured.RestAssured;
