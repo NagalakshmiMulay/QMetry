@@ -115,7 +115,7 @@ test {
         html {
             enabled false
         }
-        xml.destination "/Users/nishit/Documents/QMetry/reports/myReport.xml"
+//        xml.destination "/Users/nishit/Documents/QMetry/reports/myReport.xml"
     }
 }
 
