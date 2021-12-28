@@ -3,7 +3,7 @@ package com.qmetry.qaf.example.steps.ui;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.testng.dataprovider.QAFDataProvider;
 import com.qmetry.qaf.example.comp.AmazonLogin;
-import com.qmetry.qaf.example.comp.LoginPage;
+//import com.qmetry.qaf.example.comp.LoginPage;
 
 public class AmazonPageSteps {
     static AmazonLogin loginPage = new AmazonLogin();
