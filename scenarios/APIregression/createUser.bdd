@@ -1,0 +1,11 @@
+SCENARIO: Verify post operation for list of users with valid data
+META-DATA: {"description":"Login example","groups":["WS"],"dataFile":"resources/testdata_api.json"}
+
+    Given User sets the base URL
+    And   User sets the Request Payload '${id}','${username}','${firstName}','${lastName}','${password}','${email}','${phone}','${userStatus}'
+    Then  User validates the valid response payload for list of users '${id}' and status code is 200
+
+
+END
+
+

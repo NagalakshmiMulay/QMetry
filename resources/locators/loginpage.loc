@@ -1,0 +1,4 @@
+login.comp.email=css=#user_email_login
+login.comp.password=css=#user_password
+login.comp.submit=css=#user_submit
+login.comp.error=css=[class="error-msg"]

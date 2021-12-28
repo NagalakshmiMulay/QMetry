@@ -34,10 +34,17 @@ ext {
     runTime = getCurrentTimestamp()
     resultOutputDir = String.valueOf(testResultsDir) + '/' + runTime
 
-    // set suiteFile, default is 'config/testrun_config.xml'
+    // set suiteFile, default is 'config/testrun_config_api.xml'
     if (!project.hasProperty('suiteFile')) {
-        suiteFile = 'config/testrun_config.xml'
+        suiteFile = 'config/testrun_config_api.xml'
     }
+
+    // set suiteFile, default is 'config/testrun_config_api.xml'
+    if (!project.hasProperty('suiteFile')) {
+        suiteFile = 'config/testrun_config_ui.xml'
+    }
+
+
 }
 //Add repository here
 repositories {
@@ -50,12 +57,19 @@ repositories {
 dependencies {
     implementation 'com.qmetry:qaf:2.1.10'
     implementation 'com.qmetry:qaf-support:2.1.10'
+//    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
+
+    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.3'
+
+
     implementation 'io.rest-assured:rest-assured:3.1.1'
     testImplementation 'io.rest-assured:rest-assured:3.1.1'
     testImplementation 'io.rest-assured:json-path:3.1.1'
     testImplementation 'io.rest-assured:json-schema-validator:3.1.1'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.5'
     testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
+
     // https://mvnrepository.com/artifact/com.qmetry/qaf-reportportal-integration
 
 
@@ -91,7 +105,7 @@ test {
     useTestNG() {
         useDefaultListeners = true
         outputDirectory file(resultOutputDir)
-//        suites '/Users/nishit/Documents/QMetry/config/testrun_config.xml'
+//        suites '/Users/nishit/Documents/QMetry/config/testrun_config_api.xml'
         suites suiteFile
 
         //System properties for report
@@ -112,7 +126,7 @@ test {
         html {
             enabled false
         }
-        xml.destination "/Users/nishit/Documents/QMetry/reports/myReport.xml"
+//        xml.destination "/Users/nishit/Documents/QMetry/reports/myReport.xml"
     }
 }
 

@@ -1,0 +1,7 @@
+Amazonlogin.comp.signinlink=css=[data-nav-role="signin"]
+Amazonlogin.comp.email=id=ap_email
+Amazonlogin.comp.continue=id=continue
+Amazonlogin.comp.password=id=ap_password
+Amazonlogin.comp.signin=id=signInSubmit
+
+

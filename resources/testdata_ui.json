@@ -1,0 +1,12 @@
+[
+  {
+    "username": "abvmfm@gmail.com",
+    "password": "123abc123",
+    "text": "Invalid password"
+  },
+  {
+    "username": "abvmfm@gmail.com",
+    "password": "sports143",
+    "text": "Valid password"
+  }
+]
