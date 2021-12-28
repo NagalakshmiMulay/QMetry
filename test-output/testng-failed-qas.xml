@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Demo" parallel="tests">
-  <test name="BDD Test">
+  <test name="Behavior-Driven Development UI Test">
     <method-selectors>
       <method-selector>
         <script language="beanshell">
@@ -9,10 +9,10 @@
         </script>
       </method-selector>
     </method-selectors>
-    <parameter name="scenario.file.loc" value="scenarios/suite1.bdd"/>
-    <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps"/>
+    <parameter name="scenario.file.loc" value="scenarios/UIregression/"/>
+    <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps.ui"/>
     <classes>
       <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>
     </classes>
-  </test> <!-- BDD Test -->
+  </test> <!-- Behavior-Driven Development UI Test -->
 </suite> <!-- Demo -->

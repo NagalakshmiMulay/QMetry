@@ -5,7 +5,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static com.qmetry.qaf.automation.step.CommonStep.get;
-import static com.qmetry.qaf.example.steps.AmazonPageSteps.*;
+import static com.qmetry.qaf.example.steps.ui.AmazonPageSteps.*;
 
 public class SampleTest extends WebDriverTestCase {
 

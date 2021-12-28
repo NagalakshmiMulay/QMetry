@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Demo]" parallel="tests">
   <parameter name="scenario.file.loc" value="scenarios/APIregression/"/>
-  <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps"/>
-  <test name="BDD Test">
+  <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps.apis"/>
+  <test name="Behavior-Driven Development API Test">
     <parameter name="scenario.file.loc" value="scenarios/APIregression/"/>
-    <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps"/>
+    <parameter name="step.provider.pkg" value="com.qmetry.qaf.example.steps.apis"/>
     <classes>
       <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>
       <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
     </classes>
-  </test> <!-- BDD Test -->
+  </test> <!-- Behavior-Driven Development API Test -->
 </suite> <!-- Failed suite [Demo] -->
