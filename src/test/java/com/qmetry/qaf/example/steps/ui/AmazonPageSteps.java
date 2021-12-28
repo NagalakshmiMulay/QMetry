@@ -21,4 +21,5 @@ public class AmazonPageSteps {
     // public static void assertLoginFailed(String text) {
    //     loginPage.getError().assertText(text);
     }
+
 }

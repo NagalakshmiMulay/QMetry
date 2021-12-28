@@ -27,4 +27,5 @@ public class StepsLibrary {
 	public static void assertLoginFailed(String text) {
 		loginPage.getError().assertText(text);
 	}
+
 }

@@ -24,4 +24,5 @@ public class SampleTest extends WebDriverTestCase {
 				{"admin@gmail.com","123abc123","Invalid password"},
 		};
 	}
+
 }

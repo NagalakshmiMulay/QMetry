@@ -35,4 +35,5 @@ public class LoginPage extends WebDriverBaseTestPage<WebDriverTestPage> {
     protected void openPage(PageLocator pageLocator, Object... objects) {
         driver.get("/");
     }
+
 }

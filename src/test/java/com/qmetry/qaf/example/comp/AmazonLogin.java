@@ -42,6 +42,7 @@ public void login(String email,String password){
 protected void openPage(PageLocator pageLocator,Object...objects){
         driver.get("/");
         }
+
 }
 
 
